@@ -34,7 +34,7 @@ class UserSeeder extends Seeder
 
         // Usuario Visor
         User::create([
-            'name' => 'María Supervisora',
+            'name' => 'Mario Supervisor',
             'email' => 'visor@seikou.com',
             'password' => Hash::make('password'),
             'role' => 'viewer',
