@@ -26,7 +26,7 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
                                 </svg>
-                                <h2 class="text-2xl font-bold">{{ $isEditing ? 'Editar Cliente' : 'Nuevo Cliente' }}
+                                <h2 class="text-2xl font-bold">{{ $isEditing ? 'Editar Colaborador' : 'Nuevo Colaborador' }}
                                 </h2>
                             </div>
                             <button type="button" wire:click="closeModal"
@@ -79,7 +79,7 @@
                                     class="w-5 h-5 text-theme-primary border-2 border-slate-300 rounded focus:ring-4 focus:ring-theme-primary/30">
                                 <label for="is_active"
                                     class="text-sm font-medium text-slate-700 dark:text-slate-300 cursor-pointer">
-                                    Cliente activo
+                                    Colaborador activo
                                 </label>
                             </div>
                         </div>
@@ -194,7 +194,7 @@
                                 class="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">Notas</label>
                             <textarea wire:model="notes" rows="3"
                                 class="w-full px-4 py-3 border-2 border-slate-200 dark:border-slate-700 rounded-xl focus:ring-4 focus:ring-theme-primary/30 focus:border-theme-primary bg-slate-50 dark:bg-slate-900 resize-none"
-                                placeholder="Notas adicionales sobre el cliente..."></textarea>
+                                placeholder="Notas adicionales sobre el Colaborador..."></textarea>
                         </div>
 
                     </div>
@@ -210,7 +210,7 @@
                             <button type="submit"
                                 class="flex-1 px-6 py-3 bg-gradient-to-r from-slate-900 via-theme-primary to-theme-secondary text-white font-bold rounded-xl hover:shadow-xl transition-all disabled:opacity-50"
                                 wire:loading.attr="disabled">
-                                <span wire:loading.remove>{{ $isEditing ? 'Actualizar' : 'Crear' }} Cliente</span>
+                                <span wire:loading.remove>{{ $isEditing ? 'Actualizar' : 'Crear' }} Colaborador</span>
                                 <span wire:loading>Guardando...</span>
                             </button>
                         </div>

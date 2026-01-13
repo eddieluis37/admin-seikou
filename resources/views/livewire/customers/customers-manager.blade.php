@@ -17,7 +17,7 @@
                             <div>
                                 <h1
                                     class="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-slate-800 via-theme-primary to-theme-secondary bg-clip-text text-transparent dark:from-slate-100">
-                                    👥 Gestión de Clientes
+                                    👥 Gestión de Colaboradores
                                 </h1>
                                 <p class="text-sm text-slate-600 dark:text-slate-400 mt-1">Administra tu base de
                                     clientes</p>
@@ -65,7 +65,7 @@
                             {{-- Botón Crear --}}
                             <button wire:click="create"
                                 class="px-6 py-3 bg-gradient-to-r from-slate-900 via-theme-primary to-theme-secondary text-white font-bold rounded-xl hover:shadow-2xl hover:scale-105 active:scale-95 transition-all min-h-[52px] touch-manipulation">
-                                <span class="hidden sm:inline">+ Nuevo Cliente</span>
+                                <span class="hidden sm:inline">+ Nuevo Colaborador</span>
                                 <span class="sm:hidden">+</span>
                             </button>
                         </div>
@@ -81,7 +81,7 @@
                     <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-lg">
                         <div class="flex items-center justify-between">
                             <div>
-                                <p class="text-sm text-slate-600 dark:text-slate-400">Total Clientes</p>
+                                <p class="text-sm text-slate-600 dark:text-slate-400">Total Colaboradores</p>
                                 <p class="text-3xl font-bold text-theme-primary mt-1">
                                     {{ $this->stats['total_customers'] }}</p>
                             </div>
@@ -199,7 +199,7 @@
                                     <div class="flex items-start justify-between">
                                         <div class="flex-1">
                                             <h3 class="text-xl font-bold mb-1">{{ $customer->name }}</h3>
-                                            <p class="text-sm opacity-90">Cliente #{{ $customer->id }}</p>
+                                            <p class="text-sm opacity-90">Colaborador #{{ $customer->id }}</p>
                                         </div>
                                         <div class="flex items-center gap-2">
                                             @if ($customer->is_active)
@@ -257,7 +257,7 @@
                                         </div>
                                     @endif
 
-                                    {{-- Estadísticas del cliente --}}
+                                    {{-- Estadísticas del colaborador --}}
                                     <div
                                         class="flex items-center gap-4 pt-4 border-t border-slate-200 dark:border-slate-700">
                                         <div class="flex items-center gap-2">
@@ -303,7 +303,7 @@
                                             </svg>
                                         </button>
                                         <button wire:click="delete({{ $customer->id }})"
-                                            wire:confirm="¿Estás seguro de eliminar este cliente?"
+                                            wire:confirm="¿Estás seguro de eliminar este colaborador?"
                                             class="px-4 py-2.5 bg-red-600 hover:bg-red-700 text-white font-medium rounded-xl transition-all text-sm touch-manipulation">
                                             <svg class="w-5 h-5" fill="none" stroke="currentColor"
                                                 viewBox="0 0 24 24">
@@ -333,10 +333,10 @@
                         </svg>
                         <h3 class="text-xl font-bold text-slate-700 dark:text-slate-300 mb-2">No hay clientes
                             registrados</h3>
-                        <p class="text-slate-500 dark:text-slate-400 mb-6">Comienza creando tu primer cliente</p>
+                        <p class="text-slate-500 dark:text-slate-400 mb-6">Comienza creando tu primer colaborador</p>
                         <button wire:click="create"
                             class="px-6 py-3 bg-gradient-to-r from-slate-900 via-theme-primary to-theme-secondary text-white font-bold rounded-xl hover:shadow-xl transition-all">
-                            + Crear Primer Cliente
+                            + Crear Primer Colaborador
                         </button>
                     </div>
                 @endif
