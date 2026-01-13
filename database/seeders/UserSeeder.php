@@ -12,7 +12,7 @@ class UserSeeder extends Seeder
     {
         // Usuario Admin (se crea en el wizard, pero por si acaso)
         User::firstOrCreate(
-            ['email' => 'admin@parki.com'],
+            ['email' => 'admin@seikou.com'],
             [
                 'name' => 'Administrador',
                 'password' => Hash::make('password'),
@@ -25,7 +25,7 @@ class UserSeeder extends Seeder
         // Usuario Cajero
         User::create([
             'name' => 'Juan Cajero',
-            'email' => 'cajero@parki.com',
+            'email' => 'cajero@seikou.com',
             'password' => Hash::make('password'),
             'role' => 'cashier',
             'active' => true,
@@ -35,7 +35,7 @@ class UserSeeder extends Seeder
         // Usuario Visor
         User::create([
             'name' => 'María Supervisora',
-            'email' => 'visor@parki.com',
+            'email' => 'visor@seikou.com',
             'password' => Hash::make('password'),
             'role' => 'viewer',
             'active' => true,
