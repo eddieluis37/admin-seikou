@@ -81,7 +81,7 @@
                     <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-lg">
                         <div class="flex items-center justify-between">
                             <div>
-                                <p class="text-sm text-slate-600 dark:text-slate-400">Colaborador en total</p>
+                                <p class="text-sm text-slate-600 dark:text-slate-400">Colaborador</p>
                                 <p class="text-3xl font-bold text-theme-primary mt-1">
                                     {{ $this->stats['total_customers'] }}</p>
                             </div>
