@@ -19,8 +19,8 @@
                                     class="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-slate-800 via-theme-primary to-theme-secondary bg-clip-text text-transparent dark:from-slate-100">
                                     👥 Gestión de Colaboradores
                                 </h1>
-                                <p class="text-sm text-slate-600 dark:text-slate-400 mt-1">Administra tu base de
-                                    clientes</p>
+                                <p class="text-sm text-slate-600 dark:text-slate-400 mt-1">Administra base de
+                                    colaborador</p>
                             </div>
                         </div>
 
